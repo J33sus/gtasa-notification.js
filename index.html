@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>gtasa-notification.js</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+	<meta name="description" content="GTA SA Notifications">
+	<meta name="keywords" content="html, css, gta, san andreas">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="gtasa-notification.js">
+
+	<link rel="stylesheet" href="./css/normalize.min.css">
+	<link rel="stylesheet" href="./css/gtasa-notification.min.css">
+	<style>
+		body {
+			overflow: hidden;
+			background: rgb(50, 50, 50);
+		}
+		.container {
+			width: 100%;
+			height: 100vh;
+			user-select: none;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			position: absolute;
+		}
+
+		.gta-title {
+   			text-align: center;
+			cursor: pointer;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 32px;
+			color: #fff;
+			margin-bottom: 18px;
+			transition: all .2s ease-out;
+		}
+
+		.gta-title:hover {
+			color: rgb(218, 212, 212);
+		}
+
+		.gta-subtitle {
+			margin-top: 0px;
+			text-align: center;
+			color: rgb(231, 231, 231);
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		.gta-button {
+			margin: 2px;
+			display: inline-block;
+			border-radius: 4px;
+			text-decoration: none;
+			width: fit-content;
+			padding: 10px;
+			color: #fff;
+			background: rgb(30, 30, 30);
+		}
+
+		.gta-button:hover {
+			background: rgb(40, 40, 40);
+		}
+	</style>
+</head>
+<body class="container">
+	<h1 class="gta-title" onclick="showNotifications()">gtasa-notification.js</h1>
+	<h2 class="gta-subtitle">Simple Javascript notifications based on GTA San Andreas </h2>
+	<div class="gta-subtitle">
+		<a href="#" class="gta-button" onclick="GTASA.notification('GTA San Andreas~n~~n~Notification System', 'up left', 5000)">up left</a>
+		<a href="#" class="gta-button" onclick="GTASA.notification('Cheat activated', 'up right', 5000)">up right</a>
+		<a href="#" class="gta-button" onclick="GTASA.notification('Test notification', 'bottom left', 5000)">bottom left</a>
+		<a href="#" class="gta-button" onclick="GTASA.notification('Infernus spawned!', 'bottom right', 5000)">bottom right</a>
+	</div>
+	<script>
+		function showNotifications() {
+			let position = ['up left', 'up right', 'bottom left', 'bottom right'];
+			let random = Math.floor(Math.random() * position.length);
+
+			GTASA.notification({message: 'My GTA SA Notification', position: position[random], time: 5000});
+		}
+	</script>
+	<script src="./js/gtasa-notification.min.js"></script>
+</body>
+</html>
