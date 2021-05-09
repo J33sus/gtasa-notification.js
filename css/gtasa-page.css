@@ -1,0 +1,45 @@
+.container {
+	width: 100%;
+	height: 100vh;
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+}
+
+.gta-title {
+	   text-align: center;
+	cursor: pointer;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 32px;
+	color: #fff;
+	margin-bottom: 18px;
+	transition: all .2s ease-out;
+}
+
+.gta-title:hover {
+	color: rgb(218, 212, 212);
+}
+
+.gta-subtitle {
+	margin-top: 0px;
+	text-align: center;
+	color: rgb(231, 231, 231);
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.gta-button {
+	margin: 2px;
+	display: inline-block;
+	border-radius: 4px;
+	text-decoration: none;
+	width: fit-content;
+	padding: 10px;
+	color: #fff;
+	background: rgb(30, 30, 30);
+}
+
+.gta-button:hover {
+	background: rgb(40, 40, 40);
+}

@@ -42,7 +42,7 @@ let GTASA = {
 			container.className = 'gtasa-notification-container';
 
 			let myPosition = myOptions.position.split(' ');
-			if(myPosition.includes('up')) container.style.cssText += 'top: 0px;';
+			if(myPosition.includes('top')) container.style.cssText += 'top: 0px;';
 			if(myPosition.includes('bottom')) container.style.cssText += 'bottom: 0px;';			
 			if(myPosition.includes('left')) container.style.cssText += 'left: 0px;';			
 			if(myPosition.includes('right')) container.style.cssText += 'right: 0px;';			
