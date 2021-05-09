@@ -4,10 +4,10 @@ Simple Javascript notifications based on GTA San Andreas. Responsive
 ## Installation
 Add CSS and JS in your code.
 ```html
-	<link rel="stylesheet" href="https://j33sus.github.io/gtasa-notification.js/css/gtasa-notification.min.css">
+<link rel="stylesheet" href="https://j33sus.github.io/gtasa-notification.js/css/gtasa-notification.min.css">
 ```
 ```html
-	<script src="https://j33sus.github.io/gtasa-notification.js/js/gtasa-notification.min.js"></script>
+<script src="https://j33sus.github.io/gtasa-notification.js/js/gtasa-notification.min.js"></script>
 ```
 
 ## Use
@@ -31,13 +31,13 @@ GTASA.notification(message, position, time);
 GTASA.notification('Hello!', 'top left', 5000);
 ```
 
-### Position
+## Position
 `top left`, `top right`, `bottom left`, `bottom right`
 
-### Custom sound
+## Custom sound
 ```js
 let options = {
-    ...
+    // ...
     enableSound: true, // default
     soundUrl: 'yourfile.ext'
 };
