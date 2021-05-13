@@ -1,4 +1,4 @@
-# GTA SA Menu
+# gtasa-notification.js
 Simple Javascript notifications based on GTA San Andreas. Responsive
 
 ## Installation
